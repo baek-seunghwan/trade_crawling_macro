@@ -126,9 +126,7 @@ USER_PROFILE_DIR = Path(os.environ.get("TV_CHROME_PROFILE", "./chrome_profile"))
 INDICATORS = json.loads(os.environ.get("TV_INDICATORS", '["Relative Strength Index", "Moving Average Convergence Divergence"]'))
 
 # 종목 리스트 (환경변수 TV_TICKERS_JSON 로 대체 가능)
-_default_tickers = ["MSFT", "AAPL", "NVDA", "GOOGL", "AMZN", "META", "GOOG", "BRK.B", "LLY", "AVGO",
-                    "V", "JPM", "TSLA", "XOM", "WMT", "UNH", "MA", "JNJ", "PG", "HD",
-                    "ORCL", "COST", "MRK", "BAC", "ABBV", "CVX", "CRM", "KO", "NFLX", "AMD"]
+_default_tickers = ["MSFT", "AAPL", "NVDA"]
 TV_TICKERS = json.loads(os.environ.get("TV_TICKERS_JSON", json.dumps(_default_tickers)))
 
 # 시간프레임 설정: (표시, 라벨, URL interval, 과거데이터 Lazy 로딩 필요 여부)
